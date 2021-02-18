@@ -1,0 +1,135 @@
+<!-- Train And Deploy Model Page -->
+
+<nz-layout class="layout">
+  <nz-layout>
+    <nz-header>
+      <button class="nav-button">Dashboard</button>
+      <button class="nav-button">Tagged Images</button>
+      <button class="nav-button">Train & Deploy Model</button>
+      <button class="nav-button">My Models</button>
+      <button class="nav-button">Test Models</button>
+    </nz-header>
+    <nz-content>
+      <div></div>
+      <div nz-row>
+
+        <!-- Images Card -->
+        <div nz-col nzSpan="8" style="margin-right: 10px">
+          <nz-card style="min-height: 80vh; max-height: 80vh">
+            <div>
+              <nz-card style="margin: -24px; background-color: lightgray" >
+                <div
+                  style="text-align: center; font-weight: 1000; font-size: 16px"
+                >
+                  Images
+                </div>
+              </nz-card>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div>
+              <nz-upload
+                nzType="drag"
+                [nzMultiple]="true"
+                nzAction="https://www.mocky.io/v2/5cc8019d300000980a055e76"
+                (nzChange)="handleChange($event)"
+              >
+                <p class="ant-upload-drag-icon">
+                  <i nz-icon nzType="inbox"></i>
+                </p>
+                <p class="ant-upload-text">
+                  Click or drag file to this area to upload
+                </p>
+                <p class="ant-upload-hint">
+                  Support for a single or bulk upload. Strictly prohibit from
+                  uploading company data or other band files
+                </p>
+              </nz-upload>
+            </div>
+          </nz-card>
+        </div>
+
+        <!-- Train and Schedule Card -->
+
+        <div nz-col nzSpan="5" style="margin-right: 10px">
+          <nz-card style="min-height: 50vh; max-height: 60vh">
+            <nz-layout>
+              <nz-header style="margin: -25px; background-color: lightgrey">
+                <button
+                  class="nav-button"
+                  style="
+                    font-weight: 1000;
+                    font-size: 14px;
+                    background-color: lightgrey;
+                  "
+                >
+                  Train
+                </button>
+                <button
+                  class="nav-button"
+                  style="
+                    font-weight: 1000;
+                    font-size: 14px;
+                    background-color: lightgray;
+                  "
+                >
+                  Schedule
+                </button>
+              </nz-header>
+              <nz-content style="background-color: primary">
+                <nz-card
+                  nzTitle="3 Images"
+                  [nzExtra]="extraTemplate"
+                  [nzActions]="[trainButton]"
+                  style="
+                    margin-left: -40px;
+                    margin-right: -40px;
+                    text-align: center;
+                  "
+                >
+                  <p>Batch Size</p>
+                  <input
+                    class="value"
+                    type="number"
+                    style="margin-top: -30px"
+                  />
+                  <br />
+                  <br />
+                  <p>Iterations Needed (Epochs)</p>
+                  <input
+                    class="value"
+                    type="number"
+                    style="margin-top: -30px"
+                  />
+                </nz-card>
+                <ng-template #extraTemplate>
+                  <a style="font-weight: 1000">Reset</a>
+                </ng-template>
+                <ng-template #trainButton>
+                    <button nz-button nzType="primary">Train Now</button>
+                  </ng-template>
+              </nz-content>
+            </nz-layout>
+
+            <div></div>
+          </nz-card>
+        </div>
+
+        <!-- Output Model Card -->
+        <div nz-col nzSpan="10">
+          <nz-card style="min-height: 80vh; max-height: 80vh">
+            <nz-card style="margin: -25px; background-color: lightgray">
+              <div
+                style="text-align: center; font-weight: 1000; font-size: 16px"
+              >
+                Output Model
+              </div>
+            </nz-card>
+          </nz-card>
+        </div>
+      </div>
+    </nz-content>
+    <nz-footer>Ant Design ©2020 Implement By Angular</nz-footer>
+  </nz-layout>
+</nz-layout>

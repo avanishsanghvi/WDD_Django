@@ -1,0 +1,268 @@
+<!-- Dashboard Page -->
+
+<nz-layout class="layout">
+  <nz-layout>
+    <nz-header>
+      <button class="nav-button">Dashboard</button>
+      <button class="nav-button">Tagged Images</button>
+      <button class="nav-button">Train & Deploy Model</button>
+      <button class="nav-button">My Models</button>
+      <button class="nav-button">Test Models</button>
+    </nz-header>
+    <nz-content>
+      <div>
+        <nz-card style="background-color: lightgrey">
+          <div nz-row style="margin: -20px">
+            <div nz-col nzSpan="4">
+              <div
+                style="
+                  padding: 20px 0;
+                  text-align: center;
+                  font-size: 15px;
+                  font-weight: 800;
+                "
+              >
+                Images(3)
+              </div>
+            </div>
+            <div nz-col nzSpan="10" style="padding: 5px">
+              <span style="font-weight: 600"> Batches </span>
+              <span>
+                <nz-input-group [nzSuffix]="suffixIconSearch">
+                  <input type="text" nz-input placeholder="ALL" />
+                </nz-input-group>
+                <ng-template #suffixIconSearch>
+                  <i nz-icon nzType="search"></i>
+                </ng-template>
+              </span>
+            </div>
+
+            <div nz-col nzSpan="10" style="padding: 5px">
+              <span style="font-weight: 600"> Defects </span>
+              <span>
+                <nz-input-group [nzSuffix]="suffixIconSearch">
+                  <input type="text" nz-input placeholder="ALL" />
+                </nz-input-group>
+                <ng-template #suffixIconSearch>
+                  <i nz-icon nzType="search"></i>
+                </ng-template>
+              </span>
+            </div>
+          </div>
+        </nz-card>
+      </div>
+
+      <!-- Content Area -->
+
+      <div nz-row>
+
+        <!-- Left Card -->
+        <div nz-col nzSpan="6" style="margin-right: 5px">
+
+          <!-- Left Card Header -->
+          <nz-card>
+            <div style="margin: -20px; text-align: center;">
+              <div style="padding: 10px">
+                <span class="text" style="margin-top: 10px; font-size: 20px"
+                  >Select All
+                </span>
+
+                <button style="margin-left: 15%" nz-button nzType="primary">
+                  Train
+                </button>
+
+                <button style="margin-left: 15%" nz-button nzType="primary">
+                  Test
+                </button>
+              </div>
+
+              <div class="inner-menu" style="overflow-y: scroll; max-height: 100vh; min-height: 100vh">
+
+
+                <!-- Individual Card -->
+
+                <nz-card class="card-class">
+                  <div nz-row style="margin: -20px">
+                    <div nz-col nzSpan="12">
+                      <img
+                        style="height: 100%; width: 100%; object-fit: contain"
+                        alt="example"
+                        src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                      />
+                    </div>
+                    <div nz-col nzSpan="12" style="padding: 17px">
+                      <div nz-row style="font-weight: 700; font-size: 14px">
+                        Img1_ffe_1.jpg
+                      </div>
+                      <div nz-row style="font-weight: 500; font-size: 13px">
+                        Defects : 2
+                      </div>
+                      <div nz-row style="font-weight: 500; font-size: 13px">
+                        Batch : 33377887
+                      </div>
+                    </div>
+                  </div>
+                </nz-card>
+
+                <!-- Individual Card -->
+
+                <nz-card class="card-class">
+                  <div nz-row style="margin: -20px">
+                    <div nz-col nzSpan="12">
+                      <img
+                        style="height: 100%; width: 100%; object-fit: contain"
+                        alt="example"
+                        src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                      />
+                    </div>
+                    <div nz-col nzSpan="12" style="padding: 17px">
+                      <div nz-row style="font-weight: 700; font-size: 14px">
+                        Img1_ffe_1.jpg
+                      </div>
+                      <div nz-row style="font-weight: 500; font-size: 13px">
+                        Defects : 2
+                      </div>
+                      <div nz-row style="font-weight: 500; font-size: 13px">
+                        Batch : 33377887
+                      </div>
+                    </div>
+                  </div>
+                </nz-card>
+
+
+                <nz-card class="card-class">
+                  <div nz-row style="margin: -20px">
+                    <div nz-col nzSpan="12">
+                      <img
+                        style="height: 100%; width: 100%; object-fit: contain"
+                        alt="example"
+                        src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                      />
+                    </div>
+                    <div nz-col nzSpan="12" style="padding: 17px">
+                      <div nz-row style="font-weight: 700; font-size: 14px">
+                        Img1_ffe_1.jpg
+                      </div>
+                      <div nz-row style="font-weight: 500; font-size: 13px">
+                        Defects : 2
+                      </div>
+                      <div nz-row style="font-weight: 500; font-size: 13px">
+                        Batch : 33377887
+                      </div>
+                    </div>
+                  </div>
+                </nz-card>
+              </div>
+            </div>
+          </nz-card>
+        </div>
+        
+        <!-- Right Card -->
+        <div nz-col nzSpan="16">
+
+          <!-- Right Card Image -->
+          <nz-card style="min-height: 108vh; max-height: 108vh;">
+            <div style="margin: -10px">
+              <div class="picture">
+                <img src="..\assets\yatch.jpg" class="picture" />
+              </div>
+              <br/>
+              <div>
+                <!-- Right Card Header -->
+                <nz-card class="card-class">
+                  <div nz-row style="margin: -20px;">
+                    <div nz-col nzSpan="2" style="text-align: center;padding: 10px 0; font-weight: 600;">Name</div>
+                    <div nz-col nzSpan="6" style="padding: 3px;">
+                      <nz-input-group [nzSuffix]="inputClearTpl">
+                        <input
+                          type="text"
+                          nz-input
+                          placeholder="Img1_ffe_1.jpg"
+                        />
+                      </nz-input-group>
+                      <ng-template #inputClearTpl
+                        ><i
+                          nz-icon
+                          class="ant-input-clear-icon"
+                          nzTheme="fill"
+                          nzType="close-circle"
+                          *ngIf="inputValue"
+                          (click)="inputValue = null"
+                        ></i
+                      ></ng-template>
+                    </div>
+                    <div nz-col nzSpan="8" style="text-align: center;padding: 10px 0; font-weight: 600;">Batch #3337789636</div>
+
+                    <div nz-col nzSpan="8" style="text-align: center;padding: 10px 0; font-weight: 600;">Serial# SL 45XCV 99889</div>
+                  </div>
+                </nz-card>
+              </div>
+              <br />
+              <!-- Right Card Table -->
+              <div>
+                <nz-table
+                  #basicTable
+                  [nzData]="listOfData"
+                  [nzScroll]="{ x: '800px', y: '100px' }"
+                >
+                  <thead>
+                    <tr>
+                      <th>Defects</th>
+                      <th>Locations</th>
+                      <th>Defect Area</th>
+                      <th>Confidence</th>
+                      <th>Clear Tag</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let data of basicTable.data">
+                      <td>{{ data.defects }}</td>
+                      <td>{{ data.location }}</td>
+                      <td>{{ data.defectArea }}</td>
+                      <td>{{ data.confidence }}</td>
+                      <td>
+                        <nz-divider nzType="vertical"></nz-divider>
+                        <i nz-icon nzType="delete" nzTheme="outline"></i>
+                      </td>
+                    </tr>
+                  </tbody>
+                </nz-table>
+              </div>
+            </div>
+          </nz-card>
+        </div>
+        <div nz-col nzSpan="1">
+          <div style="margin-left: 5px; margin-top: 10px; margin-left: 10px">
+            <i
+              nz-icon
+              nzType="save"
+              nzTheme="fill"
+              style="
+                vertical-align: middle;
+                font-size: 20px;
+                margin-right: 10px;
+              "
+            ></i>
+            <span style="font-weight: 600; position: absolute">Save</span>
+          </div>
+
+          <br />
+          <div style="margin-left: 5px; margin-left: 10px">
+            <i
+              nz-icon
+              nzType="delete"
+              nzTheme="fill"
+              style="
+                vertical-align: middle;
+                font-size: 20px;
+                margin-right: 10px;
+              "
+            ></i>
+            <span style="font-weight: 600; position: absolute">Delete</span>
+          </div>
+        </div>
+      </div>
+    </nz-content>
+    <nz-footer>Ant Design ©2020 Implement By Angular</nz-footer>
+  </nz-layout>
+</nz-layout>

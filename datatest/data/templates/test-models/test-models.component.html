@@ -1,0 +1,618 @@
+<!-- Test Models Page -->
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'data/test-models.component.scss' %}">
+
+<nz-layout class="layout">
+  <nz-layout>
+
+    <!-- Page Header -->
+    <nz-header>
+      <button class="nav-button">Dashboard</button>
+      <button class="nav-button">Tagged Images</button>
+      <button class="nav-button">Train & Deploy Model</button>
+      <button class="nav-button">My Models</button>
+      <button class="nav-button">Test Models</button>
+    </nz-header>
+
+    <!-- Page Content -->
+    <nz-content>
+      <nz-row [nzGutter]="[16, 16]">
+
+        <!-- Left Card -->
+        <div nz-col nzSpan="5" style="margin-right: 1px;">
+          
+          <nz-card
+            style="
+              text-align: center;
+              margin-top: auto;
+              margin-bottom: auto;
+              font-weight: 1000;
+            "
+            class="text"
+          >
+            <div
+              style="
+                text-align: center;
+                font-size: 20px;
+                font-weight: bold;
+                margin: 10px;
+                background-color: lightgray;
+                margin: 10px;
+              "
+            >
+              List of Models
+            </div>
+            <div style="overflow-y: scroll; max-height: 121vh; min-height: 121vh;padding: 5px;">
+
+              <!-- Individual Cards -->
+
+              <nz-card class="card-class">
+                <div nz-row style="margin: -24px">
+                  <div
+                    nz-col
+                    nzSpan="4"
+                    style="
+                      text-align: center;
+                      margin-top: auto;
+                      margin-bottom: auto;
+                    "
+                  >
+                    <i nz-icon nzType="right-circle" nzTheme="fill"></i>
+                  </div>
+                  <div nz-col nzSpan="20">
+                    <div nz-row style="font-weight: 700; font-size: 17px">
+                      Model 1
+                    </div>
+                    <div nz-row style="font-weight: 400; font-size: 15px">
+                      Test : 72%
+                    </div>
+                    <div nz-row style="font-weight: 400; font-size: 15px">
+                      Validation : 75%
+                    </div>
+                  </div>
+                </div>
+              </nz-card>
+
+              <nz-card class="card-class">
+                <div nz-row style="margin: -24px">
+                  <div
+                    nz-col
+                    nzSpan="4"
+                    style="
+                      text-align: center;
+                      margin-top: auto;
+                      margin-bottom: auto;
+                    "
+                  >
+                    <i nz-icon nzType="right-circle" nzTheme="fill"></i>
+                  </div>
+                  <div nz-col nzSpan="20">
+                    <div nz-row style="font-weight: 700; font-size: 17px">
+                      Model 1
+                    </div>
+                    <div nz-row style="font-weight: 400; font-size: 15px">
+                      Test : 72%
+                    </div>
+                    <div nz-row style="font-weight: 400; font-size: 15px">
+                      Validation : 75%
+                    </div>
+                  </div>
+                </div>
+              </nz-card>
+
+              <nz-card class="card-class">
+                <div nz-row style="margin: -24px">
+                  <div
+                    nz-col
+                    nzSpan="4"
+                    style="
+                      text-align: center;
+                      margin-top: auto;
+                      margin-bottom: auto;
+                    "
+                  >
+                    <i nz-icon nzType="right-circle" nzTheme="fill"></i>
+                  </div>
+                  <div nz-col nzSpan="20">
+                    <div nz-row style="font-weight: 700; font-size: 17px">
+                      Model 1
+                    </div>
+                    <div nz-row style="font-weight: 400; font-size: 15px">
+                      Test : 72%
+                    </div>
+                    <div nz-row style="font-weight: 400; font-size: 15px">
+                      Validation : 75%
+                    </div>
+                  </div>
+                </div>
+              </nz-card>
+
+              <!-- Individual Cards -->
+
+              <nz-card class="card-class">
+                <div nz-row style="margin: -24px">
+                  <div
+                    nz-col
+                    nzSpan="4"
+                    style="
+                      text-align: center;
+                      margin-top: auto;
+                      margin-bottom: auto;
+                    "
+                  >
+                    <i nz-icon nzType="right-circle" nzTheme="fill"></i>
+                  </div>
+                  <div nz-col nzSpan="20">
+                    <div nz-row style="font-weight: 700; font-size: 17px">
+                      Model 1
+                    </div>
+                    <div nz-row style="font-weight: 400; font-size: 15px">
+                      Test : 72%
+                    </div>
+                    <div nz-row style="font-weight: 400; font-size: 15px">
+                      Validation : 75%
+                    </div>
+                  </div>
+                </div>
+              </nz-card>
+
+              <nz-card class="card-class">
+                <div nz-row style="margin: -24px">
+                  <div
+                    nz-col
+                    nzSpan="4"
+                    style="
+                      text-align: center;
+                      margin-top: auto;
+                      margin-bottom: auto;
+                    "
+                  >
+                    <i nz-icon nzType="right-circle" nzTheme="fill"></i>
+                  </div>
+                  <div nz-col nzSpan="20">
+                    <div nz-row style="font-weight: 700; font-size: 17px">
+                      Model 1
+                    </div>
+                    <div nz-row style="font-weight: 400; font-size: 15px">
+                      Test : 72%
+                    </div>
+                    <div nz-row style="font-weight: 400; font-size: 15px">
+                      Validation : 75%
+                    </div>
+                  </div>
+                </div>
+              </nz-card>
+
+              <nz-card class="card-class">
+                <div nz-row style="margin: -24px">
+                  <div
+                    nz-col
+                    nzSpan="4"
+                    style="
+                      text-align: center;
+                      margin-top: auto;
+                      margin-bottom: auto;
+                    "
+                  >
+                    <i nz-icon nzType="right-circle" nzTheme="fill"></i>
+                  </div>
+                  <div nz-col nzSpan="20">
+                    <div nz-row style="font-weight: 700; font-size: 17px">
+                      Model 1
+                    </div>
+                    <div nz-row style="font-weight: 400; font-size: 15px">
+                      Test : 72%
+                    </div>
+                    <div nz-row style="font-weight: 400; font-size: 15px">
+                      Validation : 75%
+                    </div>
+                  </div>
+                </div>
+              </nz-card>
+
+              <nz-card class="card-class">
+                <div nz-row style="margin: -24px">
+                  <div
+                    nz-col
+                    nzSpan="4"
+                    style="
+                      text-align: center;
+                      margin-top: auto;
+                      margin-bottom: auto;
+                    "
+                  >
+                    <i nz-icon nzType="right-circle" nzTheme="fill"></i>
+                  </div>
+                  <div nz-col nzSpan="20">
+                    <div nz-row style="font-weight: 700; font-size: 17px">
+                      Model 1
+                    </div>
+                    <div nz-row style="font-weight: 400; font-size: 15px">
+                      Test : 72%
+                    </div>
+                    <div nz-row style="font-weight: 400; font-size: 15px">
+                      Validation : 75%
+                    </div>
+                  </div>
+                </div>
+              </nz-card>
+
+              <nz-card class="card-class">
+                <div nz-row style="margin: -24px">
+                  <div
+                    nz-col
+                    nzSpan="4"
+                    style="
+                      text-align: center;
+                      margin-top: auto;
+                      margin-bottom: auto;
+                    "
+                  >
+                    <i nz-icon nzType="right-circle" nzTheme="fill"></i>
+                  </div>
+                  <div nz-col nzSpan="20">
+                    <div nz-row style="font-weight: 700; font-size: 17px">
+                      Model 1
+                    </div>
+                    <div nz-row style="font-weight: 400; font-size: 15px">
+                      Test : 72%
+                    </div>
+                    <div nz-row style="font-weight: 400; font-size: 15px">
+                      Validation : 75%
+                    </div>
+                  </div>
+                </div>
+              </nz-card>
+            </div>
+          </nz-card>
+        </div>
+
+        <!-- Right Card -->
+
+        <div nz-col nzSpan="18">
+          <nz-card>
+            <nz-card style="background-color: lightgray;">
+              <div style="margin: -18px">
+                <div
+                  style="
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin: 10px;
+                    display: inline-block;
+                  "
+                >
+                  Images for Testing
+                </div>
+                <span
+                  style="
+                    font-weight: 1000;
+                    margin-left: 3%;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                  "
+                >
+                  Upload Images
+                </span>
+
+                <button
+                  style="
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    margin-left: 16%;
+                    border-radius: 100px;
+                  "
+                  nz-button
+                  nzType="primary"
+                >
+                  Upload
+                </button>
+                <button
+                  style="
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    margin-left: 75%;
+                    border-radius: 100px;
+                  "
+                  nz-button
+                  nzType="primary"
+                >
+                  Test
+                </button>
+              </div>
+            </nz-card>
+            <br />
+
+            <nz-layout>
+              <div>
+
+                
+                <nz-card >
+                  <!-- Card 1 Header -->
+                  <div nz-row style="margin: -24px">
+                    <div nz-col nzSpan="5">
+                      <nz-card style="border: 1px solid lightgray" class="head-card">
+                        <div style="margin: -24px">
+                          <div style="font-weight: 1000; font-size: larger">
+                            <span> Test Accuracy </span>
+                            <span> 76% </span>
+                          </div>
+                          <div style="font-size: medium; font-weight: 500">
+                            <span> Processed 27 images. </span>
+                          </div>
+                          <div style="font-size: medium; font-weight: 500">
+                            <span> Detected 54 defects </span>
+                          </div>
+                        </div>
+                      </nz-card>
+                    </div>
+
+                    <!-- Card 2 Header -->
+
+                    <div nz-col nzSpan="6">
+                      <nz-card style="border: 1px solid lightgray" class="head-card">
+                        <div style="margin: -24px">
+                          <div style="font-weight: 500; font-size: medium">
+                            <div nz-row>
+                              <div nz-col nzSpan="16">Linear Crack</div>
+                              <div nz-col nzSpan="8" style="font-weight: 700">
+                                75%
+                              </div>
+                            </div>
+                          </div>
+                          <div style="font-size: medium; font-weight: 500">
+                            <div nz-row>
+                              <div nz-col nzSpan="16">Slag Inclusions</div>
+                              <div nz-col nzSpan="8" style="font-weight: 700">
+                                75%
+                              </div>
+                            </div>
+                          </div>
+                          <div style="font-size: medium; font-weight: 500">
+                            <div nz-row>
+                              <div nz-col nzSpan="16">Porosity</div>
+                              <div nz-col nzSpan="8" style="font-weight: 700">
+                                75%
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </nz-card>
+                    </div>
+
+                    <!-- Card 3 Header -->
+
+                    <div nz-col nzSpan="5">
+                      <nz-card style="border: 1px solid lightgray" class="head-card">
+                        <div style="margin: -24px">
+                          <div style="font-size: medium; font-weight: 500">
+                            <div nz-row>
+                              <div nz-col nzSpan="16">Arc Strikes</div>
+                              <div nz-col nzSpan="8" style="font-weight: 700">
+                                75%
+                              </div>
+                            </div>
+                          </div>
+                          <div style="font-size: medium; font-weight: 500">
+                            <div nz-row>
+                              <div nz-col nzSpan="16">Crater Crack</div>
+                              <div nz-col nzSpan="8" style="font-weight: 700">
+                                75%
+                              </div>
+                            </div>
+                          </div>
+                          <div style="font-size: medium; font-weight: 500">
+                            <div nz-row>
+                              <div nz-col nzSpan="16">Undercut</div>
+                              <div nz-col nzSpan="8" style="font-weight: 700">
+                                75%
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </nz-card>
+                    </div>
+
+                    <!-- Card 4 Header -->
+                    <div nz-col nzSpan="5">
+                      <nz-card style="border: 1px solid lightgray" class="head-card">
+                        <div style="margin: -24px">
+                          <div style="font-weight: 500; font-size: medium">
+                            <div nz-row>
+                              <div nz-col nzSpan="16">Gas Inclusions</div>
+                              <div nz-col nzSpan="8" style="font-weight: 700">
+                                75%
+                              </div>
+                            </div>
+                          </div>
+                          <div style="font-weight: 500; font-size: medium">
+                            <div nz-row>
+                              <div nz-col nzSpan="16">Distortion</div>
+                              <div nz-col nzSpan="8" style="font-weight: 700">
+                                75%
+                              </div>
+                            </div>
+                          </div>
+                          <div style="font-weight: 500; font-size: medium">
+                            <div nz-row>
+                              <div nz-col nzSpan="16">Lamellar Tear</div>
+                              <div nz-col nzSpan="8" style="font-weight: 700">
+                                75%
+                              </div>
+                            </div>
+                          </div>
+                        </div></nz-card
+                      >
+                    </div>
+                  </div>
+                </nz-card>
+              </div>
+
+              <div nz-row>
+                <div nz-col nzSpan="8">
+                  <nz-card
+                    class="hideScroll"
+                    style="
+                      background-color: white;
+                      min-height: 106vh;
+                      max-height: 106vh;
+                      overflow-y: scroll;
+                    "
+                  >
+                    <div
+                      style="
+                        margin: -20px;
+                        overflow-y: scroll;
+                        max-height: 106vh;
+                      "
+                    >
+                      <div>
+                        <input type="checkbox" id="cb1" />
+                        <label for="cb1"
+                          ><img
+                            src="..\assets\yatch.jpg"
+                            style="height: 100px; width: 100%"
+                        /></label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="cb2" />
+                        <label for="cb2"
+                          ><img
+                            src="..\assets\yatch.jpg"
+                            style="height: 100px; width: 100%"
+                        /></label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="cb3" />
+                        <label for="cb3"
+                          ><img
+                            src="..\assets\yatch.jpg"
+                            style="height: 100px; width: 100%"
+                        /></label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="cb3" />
+                        <label for="cb3"
+                          ><img
+                            src="..\assets\yatch.jpg"
+                            style="height: 100px; width: 100%"
+                        /></label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="cb3" />
+                        <label for="cb3"
+                          ><img
+                            src="..\assets\yatch.jpg"
+                            style="height: 100px; width: 100%"
+                        /></label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="cb3" />
+                        <label for="cb3"
+                          ><img
+                          src="..\assets\yatch.jpg"
+                            style="height: 100px; width: 100%"
+                        /></label>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="cb3" />
+                        <label for="cb3"
+                          ><img
+                          src="..\assets\yatch.jpg"
+                            style="height: 100px; width: 100%"
+                        /></label>
+                      </div>
+                    </div>
+                  </nz-card>
+                </div>
+
+                <div nz-col nzSpan="16">
+                  <nz-card style=" min-height: 106vh; max-height : 106vh">
+                    <nz-card>
+                      <div style="margin: -24px">
+                        <div
+                          style="
+                            font-size: 20px;
+                            font-weight: bold;
+                            margin: 10px;
+                            display: inline-block;
+                          "
+                        >
+                          Image 1
+                        </div>
+                        <nz-switch style="margin-left: 55%" [ngModel]="true">
+                        </nz-switch>
+                        <span
+                          style="
+                            font-weight: 1000;
+                            margin-left: 5%;
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                          "
+                        >
+                          Load Lables
+                        </span>
+                      </div>
+                    </nz-card>
+
+                    <nz-switch [ngModel]="true"></nz-switch>
+                    <div style="margin: -24px">
+                      <nz-card>
+                        <div class="picture">
+                          <img src="..\assets\yatch.jpg" class="picture" />
+                        </div>
+                      </nz-card>
+
+                      <br />
+                      <br />
+
+                      <div>
+                        <nz-table
+                          #basicTable
+                          [nzData]="listOfData"
+                          [nzScroll]="{ x: '800px', y: '200px' }"
+                        >
+                          <thead>
+                            <tr>
+                              <th>Defects</th>
+                              <th>Locations</th>
+                              <th>Defect Area</th>
+                              <th>Confidence</th>
+                              <th>Clear Tag</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr *ngFor="let data of basicTable.data">
+                              <td>{{ data.defects }}</td>
+                              <td>{{ data.location }}</td>
+                              <td>{{ data.defectArea }}</td>
+                              <td>{{ data.confidence }}</td>
+                              <td>
+                                <nz-divider nzType="vertical"></nz-divider>
+                                <i
+                                  nz-icon
+                                  nzType="delete"
+                                  nzTheme="outline"
+                                ></i>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </nz-table>
+                      </div>
+                    </div>
+                  </nz-card>
+                </div>
+              </div>
+            </nz-layout>
+          </nz-card>
+        </div>
+      </nz-row>
+    </nz-content>
+    <nz-footer>Ant Design ©2020 Implement By Angular</nz-footer>
+  </nz-layout>
+</nz-layout>
